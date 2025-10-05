@@ -15,7 +15,7 @@ app.use("/uploads", express.static(path.join(__dirname, "../public/uploads")));
 
 app.use(
   cors({
-    origin: "https://minibank-en-react.vercel.app", // l’URL de ton frontend React (Vite)
+    origin: "*", // l’URL de ton frontend React (Vite)
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
