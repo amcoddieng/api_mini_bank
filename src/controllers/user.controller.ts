@@ -122,7 +122,7 @@ export const createUser = async (req: Request, res: Response) => {
     }
 
     // mot de passe par défaut
-    const password1 = "000";
+    const password1 = "12345";
     const hashedPassword = await bcrypt.hash(password1, 10);
 
     // Générer un numéro de compte unique
